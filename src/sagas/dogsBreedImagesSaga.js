@@ -1,5 +1,5 @@
 import { takeEvery, call, put } from "redux-saga/effects";
-import { setBreedImages } from "../actions/dogsBreed";
+import { setBreedImages, clearBreedImages } from "../actions/dogsBreed";
 
 import * as API from "../services/API";
 

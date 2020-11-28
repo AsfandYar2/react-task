@@ -1,6 +1,6 @@
 // ACTION FOR BREED NAMEES
-export const fetchBreedNames = (imgdata) => {
-  return { type: "FETCH_BREED_NAMES", payload: imgdata };
+export const fetchBreedNames = () => {
+  return { type: "FETCH_BREED_NAMES" };
 };
 
 export const setBreedNames = (breedNames = null) => {

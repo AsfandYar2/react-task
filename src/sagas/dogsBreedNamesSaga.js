@@ -3,9 +3,9 @@ import { takeEvery, call, put } from "redux-saga/effects";
 import { setBreedNames } from "../actions/dogsBreed";
 import * as API from "../services/API";
 
-function* fetchBreedName(action) {
+function* fetchBreedName() {
   try {
-    const breed = yield call(API.fetchBreedName, action.payload);
+    const breed = yield call(API.fetchBreedName);
     console.log(breed);
     yield put(setBreedNames(breed.message));
   } catch (e) {

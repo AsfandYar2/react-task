@@ -17,6 +17,11 @@ export default function (state = initialState, action) {
         ...state,
         dogsBreedImages: { ...payload },
       };
+    case "CLEAR_BREED_IMAGES":
+      return {
+        ...state,
+        dogsBreedImages: {},
+      };
 
     default:
       return state;

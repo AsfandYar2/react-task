@@ -48,4 +48,6 @@ const mapStateToProps = (state) => ({
   data: state.dogsBreed.dogsBreedImages,
 });
 
-export default connect(mapStateToProps, { fetchBreedImages })(DogsBreedImages);
+export default connect(mapStateToProps, {
+  fetchBreedImages,
+})(DogsBreedImages);
